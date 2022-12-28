@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/purple_500"
+    android:padding="30dp">
+
+
+    <LinearLayout
+        android:id="@+id/linearPrinc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/teal_200">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Más información en:"
+            android:textStyle="bold"
+            android:textColor="@color/purple_500"
+            android:textSize="22sp"
+            android:layout_marginBottom="30sp"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/rbtEnlace"
+                android:layout_width="200sp"
+                android:layout_height="wrap_content"
+                android:text="https://es.wikipedia.org/wiki/El_emperador_Carlos_V_con_un_perro"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/rbtLlamada"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Llamar a tu mamá"/>
+        </RadioGroup>
+
+
+
+        <Button
+            android:id="@+id/accionBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DALE CANDELA"
+            android:visibility="visible"
+            android:layout_marginBottom="30sp"
+            android:layout_marginTop="30sp"
+            />
+
+        <Button
+            android:id="@+id/atrasBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ATRÁS"
+            android:onClick="nuevas2"/>
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/purple_500"
+    android:padding="30dp">
+
+    <LinearLayout
+        android:id="@+id/linearFoto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/teal_200"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/foto"
+            android:layout_width="170sp"
+            android:layout_height="170sp"
+            android:src="@drawable/melodi"
+            android:clickable="true"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearPrinc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/teal_200">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IMC"
+            android:textStyle="bold"
+            android:textColor="@color/purple_500"
+            android:textSize="22sp"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/rbtIMC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calcular IMC"
+                android:checked="true"
+                android:onClick="btnCommand"/>
+
+            <RadioButton
+                android:id="@+id/rbtInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Más inormación"
+                android:onClick="btnCommand"/>
+        </RadioGroup>
+
+
+
+        <Button
+            android:id="@+id/calcularBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CALCULAR"
+            android:visibility="visible"
+            android:onClick="nuevasVentanas"
+            />
+
+        <Button
+            android:id="@+id/MasInfoBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MÁS INFORMACIÓN"
+            android:onClick="nuevasVentanas"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
